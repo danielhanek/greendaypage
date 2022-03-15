@@ -107,3 +107,11 @@ footer {
     background-color:black;
     color: white;
 }
+
+#indexMain{
+   background-image: url("/imgs/background-image.jpg");
+}
+
+#form{
+    font-size:26px;
+}
