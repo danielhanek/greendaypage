@@ -1,0 +1,208 @@
+* {
+    line-height: 1.3;
+}
+
+header {
+    height: 100px;
+    background-color: grey;
+}
+
+
+
+h1 {
+    padding:10px 10px 10px 25px;
+    font-size: 40px;
+    font-weight:bold;
+    text-transform: uppercase;
+    text-shadow:2px 2px red;
+
+
+}
+
+nav {
+    height:50px;
+    padding:10px;
+    font-size: 18px;
+    
+}
+
+
+nav a {
+    text-decoration:none;
+    background-color: black;
+    color: white;
+    border-radius:5%;
+    font-weight:bold;
+    padding: 0 10px 0 10px;
+    
+    
+}
+
+
+
+nav li{
+    display:inline;
+    margin:5px;
+    text-transform:uppercase;
+    text-align:center;
+    
+    
+}
+
+
+.active {
+    background-color:black;
+    color: red;
+}
+
+
+body {
+    font-family: 'Anton', sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight:bold;
+    padding-bottom:10px;
+
+}
+
+p {
+    padding-bottom:15px;
+    
+}
+
+img {
+    width:200px;
+    border: 3px outset red;
+    border-radius: 10%; 
+    margin:10px;
+    
+}
+
+img:hover{
+    filter: drop-shadow(16px 16px 20px red);
+
+}
+
+.pastmembers img:hover{
+    filter: drop-shadow(16px 16px 20px black);
+}
+
+a:hover{
+    color:red;
+    border:3px solid black;
+}
+
+
+
+ul{
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+.membersphotos{
+    padding: 20px 0 20px 0
+}
+
+.skip {
+    text-decoration:none;
+    color: black;
+    text-transform:uppercase;
+    background:gainsboro;
+}
+
+footer {
+    background-color:black;
+    color: red;
+}
+
+
+
+#form{
+    font-size:26px;
+}
+
+.background {
+    color: green;
+}
+
+.bgimage{
+
+    background-image: url("../imgs/background-image.jpg");
+    background-color: #EAF6F7;
+    background-position: center;
+    background-size: cover;
+}
+
+.bgimage p {
+    max-width: 900px;
+    font-size: 20px;
+    
+}
+
+#bandimg{
+    animation: myanimation 5s;
+    width: 250px;
+}
+
+@keyframes myanimation {
+    from {width:25px;
+    opacity:0; filter:blur(10px);}
+    to {width: 250px;
+    opacity:1; filter:blur(0px);}
+
+
+}
+
+@media (prefers-reduced-motion) {
+    #bandimg {
+      animation-name: dissolve;
+    }
+  }
+
+.flexalbum {
+display:flex;
+flex-wrap:wrap;
+align-items: flex-start;
+flex-direction: row;
+max-height: 100vh;
+
+}
+
+@media screen and (max-width: 700px) {
+
+body {
+    height:100vh;
+}
+
+header {
+    height: 200px;
+    background-color: grey;
+}
+
+
+
+nav li{
+    display:inline-block;
+    margin:5px;
+    text-transform:uppercase;
+    text-align:center;
+    
+    
+}
+
+.bgimage{
+
+    background-image: url("../imgs/background.jpg");
+    background-color: #EAF6F7;
+    
+}
+
+
+
+}
