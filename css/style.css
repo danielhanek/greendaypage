@@ -196,6 +196,13 @@ nav li{
     
 }
 
+.bgimage{
+
+    background-image: url("../imgs/background.jpg");
+    background-color: #EAF6F7;
+    
+}
+
 
 
 }
