@@ -159,6 +159,12 @@ footer {
 
 }
 
+@media (prefers-reduced-motion) {
+    #bandimg {
+      animation-name: dissolve;
+    }
+  }
+
 .flexalbum {
 display:flex;
 flex-wrap:wrap;
@@ -168,3 +174,28 @@ max-height: 100vh;
 
 }
 
+@media screen and (max-width: 700px) {
+
+body {
+    height:100vh;
+}
+
+header {
+    height: 200px;
+    background-color: grey;
+}
+
+
+
+nav li{
+    display:inline-block;
+    margin:5px;
+    text-transform:uppercase;
+    text-align:center;
+    
+    
+}
+
+
+
+}
