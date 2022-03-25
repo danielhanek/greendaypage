@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href= "css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/de5711e331.js" crossorigin="anonymous"></script>
+  <title>Contact</title>
+  <style>
+    input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+
+}
+
+#checkbox{
+    display:flex;
+    justify-content:center;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+input[type=submit]:hover{
+    background-color: red;
+}
+
+
+  </style>
+</head>
+<body>
+  
+<header>
+
+  <h1><i class="fa-solid fa-address-card"></i>  Contact</h1>
+  <nav>
+    
+    <ul>
+        <li><a href="index.html">Welcome page</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="albums.html">Albums</a></li>
+        <li><a href="bestmoments.html">Best moments</a></li>
+        <li><a class = "active" href="contact.html">Contact</a></li>
+        <li><a href="https://greenday.com/">Official page</a></li>
+    
+    
+    
+    </ul>
+    
+    </nav>
+</header>
+
+<main>
+  <form
+  action="https://formspree.io/f/xayvboea"
+  method="POST"
+>
+  <fieldset>
+    <legend>Do you like the page? Let me know!</legend>
+    <label for = "name_id">Your Name</label><input type="text" name = "full_name" placeholder="Enter your name" id="name_id" required>
+
+
+
+    <label for = "age_id">Your Age </label><input type="number" name = "age" placeholder="What is your age?" id="age_id">
+
+
+    What is on your mind?
+    <label for ="answer_id"></label><input type ="text" name = "answer" id="answer_id" required>
+
+
+    
+    <div id = "checkbox">Check this box if you like Green Day.</div>
+    <input type="checkbox" name = "checkbox"> 
+
+    <input type="submit" name = "submitbutton" value = "You're done!">
+  </fieldset>
+ </form>
+
+</main>
+</body>
+</html>

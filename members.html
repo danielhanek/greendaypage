@@ -7,14 +7,32 @@
     <link rel="icon" href="imgs/favicon.ico">
     <link rel="stylesheet" href= "css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de5711e331.js" crossorigin="anonymous"></script>
     <title>Members</title>
+    <script>
+        function play(){
+             var audio = document.getElementById("audio");
+             audio.play();
+                       }
+
+        function play2(){
+             var audio = document.getElementById("audio2");
+             audio.play();
+                       }
+
+        function play3(){
+             var audio = document.getElementById("audio3");
+             audio.play();
+                       }
+         </script>
 </head>
 
 <body>
     
     <header>
     
-    <h1>Green Day Members</h1>
+    <h1><i class="fa-solid fa-guitar"></i>  Green Day Members</h1>
     
     <nav id = "navigation">
     
@@ -23,6 +41,7 @@
         <li><a class ="active" href="members.html">Members</a></li>
         <li><a href="albums.html">Albums</a></li>
         <li><a href="bestmoments.html">Best moments</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="https://greenday.com/">Official page</a></li>
     
     
@@ -48,9 +67,12 @@
    <div class = "membersphotos">
 
    
-    <img src = "imgs/billie.jpg" alt= "billiejoearmstrong">
-    <img src = "imgs/mike.jpg" alt= "mikedirnt">
-    <img src = "imgs/tre.png" alt= "trecool">
+    <img src="imgs/billie.jpg" value="PLAY"  onclick="play()">
+    <audio id="audio" src="recordings/billiehello.mp3"></audio>
+    <img src="imgs/mike.jpg" value="PLAY"  onclick="play2()">
+    <audio id="audio2" src="recordings/mikehello.mp3"></audio>
+    <img src="imgs/tre.png" value="PLAY"  onclick="play3()">
+    <audio id="audio3" src="recordings/trehello.mp3"></audio>
  
     </div>
 
